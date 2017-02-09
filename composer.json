@@ -1,0 +1,28 @@
+{
+    "name": "yourfightsite/announcements",
+    "description": "A Laravel package to add announcements to an application.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Bean",
+            "email": "martin@yourfightsite.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/yourfightsite/announcements/issues",
+        "source": "https://github.com/yourfightsite/announcements"
+    },
+    "require": {
+        "illuminate/database": "~5.3",
+        "illuminate/support": "~5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourFightSite\\Announcements\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
