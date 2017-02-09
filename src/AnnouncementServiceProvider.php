@@ -18,7 +18,7 @@ class AnnouncementServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'announcements');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/announcements'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/announcements'),
         ], 'views');
     }
 

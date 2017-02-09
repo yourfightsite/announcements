@@ -25,6 +25,16 @@ class Announcement extends Model
      */
     public function user()
     {
-        return $this->belongsTo('YourFightSite\User');
+        return $this->belongsTo('App\User');
+    }
+
+    /**
+     * Whether this announcement has an action.
+     *
+     * @return bool
+     */
+    public function hasAction()
+    {
+        return $this->action_text && $this->action_url;
     }
 }
